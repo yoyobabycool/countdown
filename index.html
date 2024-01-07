@@ -1,43 +1,22 @@
 <link type="text/css" rel="stylesheet" href="flipclock.css" />
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; flex-direction: row;"><h1>DEVARA STORMS IN</h1
-
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; flex-direction: row;"><h1>DEVARA STORMS IN</h1>
 <div class="clock-builder-output"></div>
-
 </div>
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
 <script type="text/javascript" src="flipclock.js"></script>
-
 <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body flip-clock-small-wrapper ul li a div div.inn { color: #FF0000; background-color: #000000; } body flip-clock-dot, body flip-clock-small-wrapper flip-clock-dot { background: #323434;
-
 box-shadow: none;} body flip-clock-wrapper . flip-clock-meridium a, body flip-clock-small-wrapper .flip-clock-meridium a { color:
-
 #323434;} .flip-clock-wrapper{ display: flex; align-items: center; justify-content: space-evenly}</style>
-
 <script type="text/javascript">
-
 $(function(){
-
-FlipClock.Lang.Custom (days:", hours:", minutes:'', seconds:");
-
+FlipClock.Lang.Custom (days:' ', hours:' ', minutes:' ', seconds:' ');
 var opts = {
-
 clockFace: 'HourCounter',
-
 countdown: true,
-
-language: 'Custom"
-
+language: 'Custom'
 };
-
 var countdown = 1704710100 - ((new Date().getTime())/1000); // from: 01/08/2024 04:05 pm +0530
-
 countdown = Math.max(1, countdown);
-
 $('.clock-builder-output').FlipClock(countdown, opts);
-
 });
-
 </script>
