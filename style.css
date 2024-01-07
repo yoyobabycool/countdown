@@ -5,13 +5,57 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f2f2f2;
 }
 
 .timer-container {
+    perspective: 1000px;
     text-align: center;
+}
+
+.timer-card {
+    display: inline-block;
+    margin: 0 5px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.timer-card.flip {
+    transform: rotateY(180deg);
+}
+
+.timer-face {
+    width: 1.5em;
+    height: 2em;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
 }
 
 #timer {
     font-size: 2em;
-    color: #333;
+    color: transparent;
+    display: inline-block;
+}
+
+#timer .timer-card {
+    perspective: 1000px;
+    display: inline-block;
+}
+
+#timer .timer-face {
+    width: 1.5em;
+    height: 2em;
+    font-size: 1.5em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
 }
