@@ -42,20 +42,3 @@ body {
     color: transparent;
     display: inline-block;
 }
-
-#timer .timer-card {
-    perspective: 1000px;
-    display: inline-block;
-}
-
-#timer .timer-face {
-    width: 1.5em;
-    height: 2em;
-    font-size: 1.5em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-}
