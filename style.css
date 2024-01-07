@@ -9,12 +9,11 @@ body {
 }
 
 .timer-container {
+    display: flex;
     perspective: 1000px;
-    text-align: center;
 }
 
 .timer-card {
-    display: inline-block;
     margin: 0 5px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -35,10 +34,4 @@ body {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-}
-
-#timer {
-    font-size: 2em;
-    color: transparent;
-    display: inline-block;
 }
